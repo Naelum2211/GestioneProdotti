@@ -1,1 +1,12 @@
-<p>product-details works!</p>
+ <!-- primo modo con la lista -->
+<div *ngIf="product">
+    <li class="list-group" style="background-color: purple;">
+        <ul class="list-group-item">Product Details: {{product.id}}</ul>
+        <ul class="list-group-item">name: {{product.name}}</ul>
+        <ul class="list-group-item">price: {{product.price | currency}}</ul>
+        <ul class="list-group-item">description: {{product.description}}</ul>
+        <ul class="list-group-item">dateofproduction: {{this.dateofproductiondisplay}}</ul>
+        <ul class="list-group-item">madeby: {{product.madeby}}</ul>
+    </li>
+</div>
+
