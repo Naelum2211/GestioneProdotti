@@ -1,6 +1,9 @@
- <!-- primo modo con la lista -->
+<div style="margin: 2% 10% 0% 10%;">
+<div>
+    <h1>Dettagli Prodotto</h1>
+</div>
 <div *ngIf="product">
-    <li class="list-group" style="background-color: purple;">
+    <li class="list-group" style="background-color: rgb(201, 201, 201);">
         <ul class="list-group-item">Product Details: {{product.id}}</ul>
         <ul class="list-group-item">name: {{product.name}}</ul>
         <ul class="list-group-item">price: {{product.price | currency}}</ul>
@@ -9,4 +12,4 @@
         <ul class="list-group-item">madeby: {{product.madeby}}</ul>
     </li>
 </div>
-
+</div>
